@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar/Navbar.component";
 import './App.css'
 import { useEffect } from "react";
+import Footer from "./components/Footer/Footer.component";
 
 
 function App() {
@@ -49,9 +50,14 @@ function App() {
             <h1>Visualize DS</h1>
             <p>The Data Structure Visualization Application is a revolutionary tool designed to help you understand data structures in a new and interactive way. With our app, you can visualize algorithms for various data structures and follow along with step-by-step explanations that break down complex concepts into simple, easy-to-understand terms.</p>
             <p>So why wait? Sign up for our Data Structure Visualization Application today and start exploring the exciting world of data structures like never before!</p>
+            <div className="main-section__content_download_links">
+              <a href="https://play.google.com/store/apps/details?id=com.chanpreet.visualizeds" target={"_blank"} rel="noreferrer"></a>
+              <div>*It is current not available on Apple App Store</div>
+            </div>
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 }

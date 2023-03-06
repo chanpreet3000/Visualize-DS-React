@@ -6,12 +6,13 @@
     display: flex;
     margin: 0;
     padding: 0;
-    margin-top: 2rem;
+    margin: 4rem 0rem;
     flex-direction: row;
 }
 
 .main-section__images {
     width: 50%;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 .divider {
@@ -32,12 +33,14 @@
     font-weight: bold;
     font-size: 2.5rem;
     margin: 0;
+    animation: 1s ease-in 0s 1 slideInFromBelow;
 }
 
 .main-section__content>p {
     font-size: 1.25rem;
     margin: 0;
     margin-top: 2rem;
+    animation: 1s ease-out 0s 1 slideInFromBelow;
 }
 
 .main-section__items {
@@ -114,4 +117,85 @@
 
 .hidden {
     opacity: 0%;
+}
+
+.main-section__content_download_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 4rem;
+}
+
+.main-section__content_download_links>a {
+    width: 30%;
+    aspect-ratio: 3;
+    background: url('./raw/google_play_store.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.main-section__content_download_links>div {
+    width: 50%;
+    color: red;
+}
+
+@media screen and (max-width:768px) {
+    .main-section {
+        flex-direction: column;
+    }
+
+    .main-section__images {
+        width: 100%;
+    }
+
+    .divider {
+        margin: 0 2rem;
+        width: 4px;
+        background: #eeeeee;
+        border-radius: 16px;
+    }
+
+    .main-section__content {
+        width: 100%;
+        padding: 0rem 2rem;
+        margin-top: 4rem;
+    }
+
+    .main-section__content_download_links {
+        flex-direction: column;
+        margin-top: 4rem;
+        padding: 0px;
+    }
+    .main-section__content_download_links>a {
+        width: 70%;
+    }
+    .main-section__content_download_links>div {
+        width: 70%;
+        color: red;
+    }
+}
+
+@keyframes slideInFromBelow {
+    0% {
+        opacity: 0%;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }

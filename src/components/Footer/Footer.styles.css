@@ -1,0 +1,92 @@
+.main-footer {
+    background: black;
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+
+.main-footer__brand>a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.main-footer__items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 4rem;
+    list-style: none;
+    transform: translateY(20%);
+}
+
+.main-footer__item {
+    display: inline-block;
+}
+
+.main-footer__item>a {
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main-footer__item>a>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-footer__helper-image {
+    width: 40px;
+    transition: all 100ms;
+    aspect-ratio: 1;
+    background-color: white;
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main-footer__item:nth-child(1) .main-footer__helper-image {
+    background-image: url('../../raw/icons8-linkedin-circled-48.png');
+}
+
+.main-footer__item:nth-child(2) .main-footer__helper-image {
+    background-image: url('../../raw/icons8-github-50.png');
+}
+
+.main-footer__item:nth-child(3) .main-footer__helper-image {
+    background-image: url('../../raw/icons8-google-play-48.png');
+}
+
+.main-footer__helper-text {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 8px;
+    max-width: 60px;
+    transition: all 100ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.main-footer__item>a:hover .main-footer__helper-image {
+    transform: translateY(-20%);
+}
+
+.main-footer__item>a:hover .main-footer__helper-text {
+    visibility: visible;
+    transform: translateY(-20%);
+    opacity: 100%;
+}
+
