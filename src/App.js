@@ -1,24 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar/Navbar.component";
+import './App.css'
+import { useEffect } from "react";
+
 
 function App() {
+  var imageList = document.getElementsByClassName('main-section__item-image');
+  console.log(imageList);
+  var zIndex = 0;
+  var currentIndex = -1;
+  function showSlides() {
+    currentIndex = (currentIndex + 1) % imageList.length;
+    imageList[currentIndex].style.zIndex = zIndex;
+    zIndex++;
+    console.log(currentIndex);
+    setTimeout(showSlides, 4000);
+  }
+
+  useEffect(() => {
+    showSlides();
+  }, [])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <section>
+        <div className="main-section">
+          <div className="main-section__images">
+            <div className="main-section__items">
+
+              <div className="main-section__item-images">
+                <div className="main-section__item-image"></div>
+                <div className="main-section__item-image"></div>
+                <div className="main-section__item-image"></div>
+                <div className="main-section__item-image"></div>
+                <div className="main-section__item-image"></div>
+                <div className="main-section__item-image"></div>
+                <div className="main-section__item-image"></div>
+                <div className="main-section__item-image"></div>
+              </div>
+
+              <div className="main-section__item-frame"></div>
+
+            </div>
+          </div>
+          <div className="divider"></div>
+          <div className="main-section__content">
+            <h1>Visualize DS</h1>
+            <p>The Data Structure Visualization Application is a revolutionary tool designed to help you understand data structures in a new and interactive way. With our app, you can visualize algorithms for various data structures and follow along with step-by-step explanations that break down complex concepts into simple, easy-to-understand terms.</p>
+            <p>So why wait? Sign up for our Data Structure Visualization Application today and start exploring the exciting world of data structures like never before!</p>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
 

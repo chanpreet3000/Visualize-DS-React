@@ -1,0 +1,86 @@
+.main-nav {
+    margin: 0;
+    padding: 1rem 2rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    box-shadow: 0px 1px 2px 2px #00000017;
+}
+
+
+.main-nav__brand {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main-nav__brand-img {
+    width: 3rem;
+    aspect-ratio: 1;
+    background: url('../../raw/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0rem 0.5rem;
+    border: 0;
+}
+
+.main-nav__brand>h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav__brand>h1>a {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+
+    text-align: end;
+}
+
+.main-nav__item>a {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+}
+
+.main-nav__item>a>h1 {
+    margin: 0;
+    padding: 0rem 1rem;
+    font-size: 1rem;
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.main-nav__item-bottom {
+    transition: all 100ms;
+    height: 3px;
+    width: 0%;
+    margin-top: 8px;
+    background-color: rgb(49, 49, 49);
+}
+
+.main-nav__item>a:hover .main-nav__item-bottom,
+.main-nav__item>a:active .main-nav__item-bottom {
+    width: 100%;
+}
