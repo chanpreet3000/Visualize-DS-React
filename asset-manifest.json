@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Visualize-DS-React/static/css/main.429fccff.css",
+    "main.js": "/Visualize-DS-React/static/js/main.8edd3355.js",
+    "static/js/787.e0724dfb.chunk.js": "/Visualize-DS-React/static/js/787.e0724dfb.chunk.js",
+    "static/media/8.jpg": "/Visualize-DS-React/static/media/8.ba10071e738b9dbff1fb.jpg",
+    "static/media/7.jpg": "/Visualize-DS-React/static/media/7.d11c02df12d157d91f0b.jpg",
+    "static/media/6.jpg": "/Visualize-DS-React/static/media/6.133bd5889a6f27a66832.jpg",
+    "static/media/5.jpg": "/Visualize-DS-React/static/media/5.8a275938211489d7e930.jpg",
+    "static/media/4.jpg": "/Visualize-DS-React/static/media/4.9f7854b7024f87f134a5.jpg",
+    "static/media/2.jpg": "/Visualize-DS-React/static/media/2.b4e212b4050c9a440e7b.jpg",
+    "static/media/1.jpg": "/Visualize-DS-React/static/media/1.34262f1d427513cc4828.jpg",
+    "static/media/3.jpg": "/Visualize-DS-React/static/media/3.33f148d108ebf808fbc8.jpg",
+    "static/media/logo.png": "/Visualize-DS-React/static/media/logo.1ead6468f2727588efef.png",
+    "static/media/google_play_store.png": "/Visualize-DS-React/static/media/google_play_store.99312a725cf3f7dc6e7c.png",
+    "static/media/phone_frame.png": "/Visualize-DS-React/static/media/phone_frame.2d3720f0b1ce7b3f68e5.png",
+    "index.html": "/Visualize-DS-React/index.html",
+    "main.429fccff.css.map": "/Visualize-DS-React/static/css/main.429fccff.css.map",
+    "main.8edd3355.js.map": "/Visualize-DS-React/static/js/main.8edd3355.js.map",
+    "787.e0724dfb.chunk.js.map": "/Visualize-DS-React/static/js/787.e0724dfb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.429fccff.css",
+    "static/js/main.8edd3355.js"
+  ]
+}
